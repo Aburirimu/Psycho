@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适配 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>暖心聊天助手 | 老年陪伴</title>
+    <style>
+        /* 基础样式 */
+        body {
+            margin: 0;
+            background: #f0f4f7;
+            /* 温和的浅蓝色背景 */
+            font-family: "Microsoft YaHei", sans-serif;
+            /* 中文字体 */
+        }
+
+        /* 聊天窗口容器 */
+        .chat-container {
+            max-width: 600px;
+            /* 电脑端合适宽度 */
+            margin: 20px auto;
+            /* 居中显示 */
+            border-radius: 15px;
+            /* 圆角 */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            /* 柔和阴影 */
+            overflow: hidden;
+            /* 隐藏iframe溢出部分 */
+        }
+
+        /* 移动端优化 */
+        @media (max-width: 768px) {
+            .chat-container {
+                margin: 0;
+                border-radius: 0;
+                /* 手机全屏显示 */
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 标题栏（可选） -->
+    <header style="text-align: center; padding: 15px; background: #ffb3bf;">
+        <h2 style="color: white; margin: 0;">🌸 24小时暖心聊天陪伴 🌸</h2>
+    </header>
+
+    <!-- 聊天窗口 -->
+    <div class="chat-container">
+        <iframe src="http://你的线上域名/chatbot/h8wv5EZ3yO3W6p" <!-- 替换为实际URL -->
+            style="width: 100%; height: 80vh; border: none;"
+            allow="microphone"
+            title="老年聊天助手"
+            ></iframe>
+    </div>
+
+    <!-- 底部说明 -->
+    <footer style="text-align: center; padding: 10px; color: #666;">
+        <small>技术支持：Dify AI | 服务时间：7×24小时</small>
+    </footer>
+</body>
+
+</html>
